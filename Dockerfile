@@ -1,12 +1,11 @@
 FROM ruby:latest
 MAINTAINER Jose Rivera <info@joserivera.org>
 
-RUN apt-get update && \
-    apt-get install -y net-tools
-
-# Install gems
+# Set up environmental variables for the app
 ENV APP_HOME /app
 ENV HOME /root
+
+# Install gems
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 COPY Gemfile* $APP_HOME/
