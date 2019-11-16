@@ -18,7 +18,7 @@ docker run --rm -p 3000:3000 launchpad/helloruby
 
 3. Visit your app:
 
-In your browser, go to [[http://localhost:3000]], or with cURL:
+In your browser, go to http://localhost:3000, or with cURL:
 
 ```
 cURL -X GET http://localhost:3000
